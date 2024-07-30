@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizQuestion"
+    android:orientation="vertical"
+    android:gravity ="center"
+    >
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width = "match_parent"
+        android:layout_height ="wrap_content"
+        android:layout_marginBottom ="10dp"
+        android:layout_marginEnd ="20dp"
+        android:layout_marginStart ="20dp"
+         android:text = "Which country does this flag belongs ?"
+        android:textSize ="29sp"
+        android:gravity ="center"
+        android:textStyle ="bold"
+        android:textColor ="#000"
+
+        />
+    <ImageView
+
+        android:id ="@+id/image"
+        android:layout_width ="240dp"
+        android:layout_height ="120dp"
+        app:srcCompat ="@drawable/china"
+        android:contentDescription="Image"
+
+        />
+    <LinearLayout
+        android:layout_width ="wrap_content"
+        android:layout_height ="wrap_content"
+        android:orientation ="horizontal"
+        android:gravity ="center"
+        android:layout_marginTop ="10dp"
+        android:layout_marginStart ="20dp"
+        android:layout_marginEnd ="20dp"
+        android:layout_marginBottom ="10dp"
+
+        >
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id ="@+id/prog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight ="1"
+            android:max ="10"
+            android:progress="0"
+            android:indeterminate="false"
+
+            />
+        <TextView
+            android:id="@+id/progtv"
+            android:layout_margin ="8dp"
+            android:layout_width ="wrap_content"
+            android:layout_height ="wrap_content"
+            android:text ="0/10"
+            android:textSize ="19sp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/option1"
+        android:layout_margin ="10dp"
+        android:layout_width ="match_parent"
+        android:layout_height ="wrap_content"
+          android:text ="China"
+        android:gravity ="center"
+        android:textSize ="35sp"
+        android:background="@drawable/defaultoptionview"
+        android:textColor ="@color/optionc"
+        />
+    <TextView
+        android:id="@+id/option2"
+        android:layout_margin ="10dp"
+        android:layout_width ="match_parent"
+        android:layout_height ="wrap_content"
+         android:text ="China"
+        android:gravity ="center"
+        android:textSize ="35sp"
+        android:textColor ="@color/optionc"
+        android:background="@drawable/defaultoptionview"
+        />
+    <TextView
+        android:id="@+id/option3"
+        android:layout_width ="match_parent"
+        android:layout_height ="wrap_content"
+         android:text ="China"
+        android:layout_margin ="10dp"
+        android:gravity ="center"
+        android:textColor ="@color/optionc"
+        android:textSize ="35sp"
+        android:background="@drawable/defaultoptionview"
+        />
+    <TextView
+        android:id="@+id/option4"
+        android:layout_margin ="10dp"
+        android:layout_width ="match_parent"
+        android:layout_height ="wrap_content"
+         android:text ="China"
+        android:gravity ="center"
+        android:textColor ="@color/optionc"
+        android:textSize ="35sp"
+        android:background="@drawable/defaultoptionview"
+        />
+    <Button
+        android:id="@+id/btn2"
+        android:text ="Submit"
+        android:layout_width ="match_parent"
+        android:layout_height ="wrap_content"
+       android:layout_margin ="10dp"
+        android:textSize ="20sp"
+        />
+
+
+
+
+</LinearLayout>
